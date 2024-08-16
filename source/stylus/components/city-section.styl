@@ -1,0 +1,134 @@
+.city-section
+  background-image: url('../images/city-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #002A1A
+
+  &__container
+    position relative
+    text-align: center
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 70px 0 20px 0
+    +above($breakpoints.md)
+      padding 90px 0 24px 0
+    +above($breakpoints.xxl)
+      padding 100px 0 24px 0
+
+  &__title
+    background: linear-gradient(90deg, #5bd98d 0%, #30734b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    +above($breakpoints.md)
+      line-height 149%
+
+  &__sub-title
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 20px 0 30px 0
+    +above($breakpoints.md)
+      padding 20px 0 35px 0
+    +above($breakpoints.xxl)
+      padding 20px 0 47px 0
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content center
+    gap: 8px
+    margin 20px auto 70px
+    width 100%
+    max-width: 752px
+    +above($breakpoints.sm)
+      flex-direction: row
+      margin 30px auto 150px
+    +above($breakpoints.md)
+      margin 30px auto 250px
+      gap: 10px
+    +above($breakpoints.xxl)
+      margin 37px auto 345px
+      gap: 16px
+
+  &__img-tape-1
+    position: absolute
+    height: auto
+    left: 50%
+    width 768px
+    transform: translateX(-50%)
+    bottom: 94px
+    +above($breakpoints.sm)
+      width 1024px
+      bottom: 80px
+    +above($breakpoints.md)
+      width 1400px
+      bottom: 115px
+    +above($breakpoints.xxl)
+      width 1920px
+      height: auto
+      bottom: 150px
+    +above($breakpoints.xxxxl)
+      width 100vw
+      height: 17vh
+      bottom: 82px
+    +above($breakpoints.xxxxxl)
+      width 100vw
+      height: 17vh
+      bottom: 90px
+    +above($breakpoints.xxxxxxl)
+      display: none
+    //   width 100vw
+    //   height: 17vh
+    //   bottom: 0
+    // +above($breakpoints.xxxxxxxl)
+    //   width 100vw
+    //   height: 10vh
+    //   bottom: 0
+
+  &__img-tape-2
+    position: absolute
+    height: auto
+    left: 50%
+    transform: translateX(-50%)
+    width 768px
+    bottom: 94px
+    +above($breakpoints.sm)
+      width 1024px
+      bottom: 80px
+    +above($breakpoints.md)
+      width 1400px
+      bottom: 115px
+    +above($breakpoints.xxl)
+      width 1920px
+      height: auto
+      bottom: 166px
+    +above($breakpoints.xxxxl)
+      width 100vw
+      height: 17vh
+      bottom: 82px
+    +above($breakpoints.xxxxxl)
+      width 100vw
+      height: 17vh
+      bottom: 90px
+    +above($breakpoints.xxxxxxl)
+      display: none
+    //   width 100vw
+    //   height: 17vh
+    //   bottom: 0
+    // +above($breakpoints.xxxxxxxl)
+    //   width 100vw
+    //   height: 10vh
+    //   bottom: 0
+
+.city-item
+  width 260px !important
+  margin 0 auto
+  +above($breakpoints.sm)
+    margin 0
+    width 200px !important
+  +above($breakpoints.md)
+    width 220px !important
+  +above($breakpoints.xxl)
+    width 240px !important

@@ -1,0 +1,29 @@
+.header
+  &__container
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content space-between
+    +above($breakpoints.xxl)
+      align-items: flex-start
+
+  &__logo
+    width 70px
+    height: auto
+    +above($breakpoints.sm)
+      width 80px
+    +above($breakpoints.md)
+      width 90px
+    +above($breakpoints.xxl)
+      width 101px
+
+  &__brand
+    display: none
+    +above($breakpoints.sm)
+      display: block
+    +above($breakpoints.xxl)
+      padding-top: 16px
+
+  &__add-padding-top
+    +above($breakpoints.xxl)
+      padding-top: 16px

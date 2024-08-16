@@ -1,0 +1,44 @@
+section.finances-section
+  .wrapper
+    .finances-section__container
+      h2.finances-section__title.font-s-70.font-w-semi-bold.text-up
+        | «НА РАССЛАБОНЕ»
+      .finances-section__sub-title.font-s-48.font-w-regular.text-up
+        | франшиза с быстрой окупаемостью
+      .finances-section__text.font-s-30
+        | Оцените перспективы запуска собственного тайм-кафе
+      .swiper-finances
+        .finances-section__cards.swiper-wrapper
+          .finances-section__card.swiper-slide
+            .font-w-medium.font-s-48.color-green.text-up 25 дней
+            .font-s-20.color-grey-67 понадобится на открытие
+          .finances-section__card.swiper-slide
+            .font-w-medium.font-s-48.color-green.text-up 3 месяца
+            .font-s-20.color-grey-67 средний срок окупаемости
+          .finances-section__card.swiper-slide
+            .font-w-medium.font-s-48.color-green.text-up 1 150 000 руб
+            .font-s-20.color-grey-67 размер ежемесячной выручки
+          .finances-section__card.swiper-slide
+            .font-w-medium.font-s-48.color-green.text-up 700 000 руб
+            .font-s-20.color-grey-67 размер ежемесячной прибыли
+          .finances-section__card.swiper-slide
+            .font-w-medium.font-s-48.color-green.text-up 1 375 000 руб
+            .font-s-20.color-grey-67 минимальный размер инвестиций
+          .finances-section__card.swiper-slide
+            .font-w-medium.font-s-48.color-green.text-up 63,4%
+            .font-s-20.color-grey-67 рентабельность по чистой прибыли
+        .finances-pagination.swiper-progress-finances
+      img.finances-section__img-mobile(src="images/finances-section-img-mobile.png" loading="lazy" width="1340" height="1704" alt="image")
+      .finances-section__bottom
+        .finances-section__bottom-title.font-w-medium.font-s-28
+          | Хотите получить детальные 
+          br.no-br
+          | расчеты для вашего города 
+          br.no-br
+          | и под ваш бюджет?
+        .finances-section__bottom-text.font-s-20 Скачайте финансовую модель франшизы
+        form.finances-section__form(data-feedback-form)
+          input.input.input--secondary.finances-item(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input.input--secondary.finances-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn.btn--secondary.finances-item(type="submit") Скачать
+      img.finances-section__img(src="images/finances-section-img.png" loading="lazy" width="1554" height="2188" alt="image")

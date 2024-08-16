@@ -1,0 +1,27 @@
+section.main-section
+  .wrapper
+    .main-section__container
+      include ../components/header.pug
+      h1.main-section__title.font-w-semi-bold.font-s-56.text-up
+        | Откройте тайм-кафе 
+        br
+        | по франшизе 
+        span.color-green «НА РАССЛАБОНЕ»
+      .main-section__sub-title.font-w-medium.font-s-34.text-up
+        | и получайте до 700 000 рублей 
+        br.no-br
+        span.font-w-regular.color-grey-b3 чистой прибыли ежемесячно
+      .main-section__bottom
+        .main-section__bottom-text.font-s-22
+          | Узнайте, как запустить 
+          br.no-br
+          | современное и популярное 
+          br
+          | антикафе за 25 дней
+        form.main-section__form(data-feedback-form)
+          input.input.main-item(type="text" name="name" autocomplete="off" placeholder="Имя")
+          input.input.main-item(type="tel" name="phone" autocomplete="off" data-inputmask="'mask': '+7 (999) 999 9999'" placeholder="Телефон")
+          button.btn.main-item(type="submit") Получить план
+      img.main-section__img-tape-2(src="images/main-section-img-tape-2.png" loading="lazy" width="1920" height="241" alt="image")
+      img.main-section__img(src="images/main-section-img.png" loading="lazy" width="960" height="1454" alt="image")
+      img.main-section__img-tape-1(src="images/main-section-img-tape-1.png" loading="lazy" width="1920" height="234" alt="image")

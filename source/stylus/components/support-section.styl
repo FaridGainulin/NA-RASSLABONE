@@ -1,0 +1,120 @@
+.support-section
+  background-image: url('../images/support-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #f8f8f9
+
+  &__container
+    position relative
+    z-index 1
+    padding 20px 0 0 0
+    +above($breakpoints.sm)
+      padding 60px 0 100px 0
+    +above($breakpoints.md)
+      padding 80px 0 150px 0
+    +above($breakpoints.xxl)
+      padding 110px 0 238px 0
+
+  &__title,
+  &__sub-title
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+
+  &__sub-title
+    color $color-grey-67
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 20px 0 30px 0
+    +above($breakpoints.md)
+      line-height 147%
+      padding 25px 0 35px 0
+    +above($breakpoints.xxl)
+      padding 37px 0 47px 0
+
+  &__items
+    display: flex
+    flex-direction: column
+    gap: 10px
+    padding-left 57px
+    +above($breakpoints.sm)
+      padding-left 10px
+    +above($breakpoints.xxl)
+      padding-left 15px
+      gap: 21px
+
+  &__item
+    color: $color-grey-67
+    display: flex
+    flex-direction: row
+    align-items: center
+    gap: 15px
+
+  &__item-dot
+    width 3px
+    height: 3px
+    border-radius: 50%
+    background-color $color-grey-67
+
+  &__bottom
+    padding 20px 10px
+    border-radius: 10px
+    backdrop-filter: blur(2px);
+    background: linear-gradient(30.89deg, rgba(28, 28, 28, 0.9) 25.267%, rgba(90, 228, 171, 0.9) 134.388%);
+    text-align: center
+    margin-top 20px
+    width 100%
+    max-width: 380px
+    +above($breakpoints.sm)
+      max-width: 260px
+      margin 0
+      position: absolute
+      right: 0
+      bottom: 100px
+      padding 20px 10px 30px 10px
+    +above($breakpoints.md)
+      max-width: 320px
+      bottom: 150px
+      padding 30px 10px 40px 10px
+    +above($breakpoints.xxl)
+      max-width: 380px
+      bottom: 244px
+      padding 30px 10px 61px 10px
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 8px
+    padding-top 20px
+    +above($breakpoints.md)
+      gap: 10px
+    +above($breakpoints.xxl)
+      padding-top 30px
+      gap: 16px
+
+  &__img
+    width 300px
+    height: auto
+    margin 10px auto 0
+    +above($breakpoints.sm)
+      margin 0
+      position: absolute
+      z-index -1
+      width 300px
+      bottom: 0
+      left: 50%
+      transform: translateX(-50%)
+    +above($breakpoints.md)
+      width 400px
+      left: 50%
+    +above($breakpoints.xxl)
+      width: 698px;
+      left: 54%;
+
+.support-item
+  width 260px !important
+  margin 0 auto
+  +above($breakpoints.sm)
+    width 240px !important

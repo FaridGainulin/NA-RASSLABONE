@@ -1,0 +1,86 @@
+.invest-section
+  background-image: url('../images/invest-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #002A1A
+
+  &__container
+    padding 20px 0 20px 0
+    text-align: center
+    +above($breakpoints.sm)
+      padding 40px 0 60px 0
+    +above($breakpoints.md)
+      padding 80px 0 90px 0
+    +above($breakpoints.xxl)
+      padding 100px 0 140px 0
+
+  &__title
+    background: linear-gradient(90deg, #5bd98d 0%, #30734b 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+  &__sub-title
+    padding 20px 0 20px 0
+    +above($breakpoints.sm)
+      padding 20px 0 40px 0
+    +above($breakpoints.md)
+      line-height 148%
+      padding 20px 0 60px 0
+    +above($breakpoints.xxl)
+      padding 20px 0 79px 0
+
+  &__cards
+    +above($breakpoints.sm)
+      display: flex
+      flex-direction: row
+      justify-content center
+      gap: 10px
+    +above($breakpoints.md)
+      gap: 15px
+    +above($breakpoints.xxl)
+      gap: 20px
+
+  &__card
+    position relative
+    width 280px !important
+    padding 20px
+    box-shadow: 0 2px 0 0 #5bd98d;
+    background: #1d3027;
+    border-radius: 5px
+    +above($breakpoints.sm)
+      width 235px !important
+    +above($breakpoints.md)
+      width 310px !important
+    +above($breakpoints.xxl)
+      width 380px !important
+      padding 47px 10px 49px 10px
+
+  &__card-line
+    position: absolute
+    top: -5px
+    left: 50%
+    transform: translateX(-50%)
+    border-top-left-radius: 5px
+    border-top-right-radius: 5px
+    background-color $color-green
+    width 180px
+    height: 5px
+    +above($breakpoints.xxl)
+      top: -9px
+      width 280px
+      height: 9px
+
+  &__card-text
+    color: $color-grey-67
+    padding 15px 0
+    +above($breakpoints.xxl)
+      padding 15px 0 62px 0
+
+.invest-item
+  width 180px !important
+  margin 0 auto
+  +above($breakpoints.md)
+    width 240px !important
+

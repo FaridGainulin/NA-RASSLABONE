@@ -1,0 +1,158 @@
+.main-section
+  background-image: url('../images/main-section-bg.jpg')
+  background-repeat: no-repeat
+  background-position: center
+  background-size: cover
+  background-color #002A1A
+
+  &__container
+    position relative
+    padding 18px 0 20px 0
+    +above($breakpoints.sm)
+      padding 18px 0 180px 0
+    +above($breakpoints.md)
+      padding 18px 0 250px 0
+    +above($breakpoints.xxl)
+      padding 18px 0 315px 0
+
+  &__title,
+  &__sub-title,
+  &__bottom-text
+    text-align: center
+    +above($breakpoints.sm)
+      text-align: start
+
+  &__title
+    padding 20px 0 15px 0
+    +above($breakpoints.sm)
+      padding 40px 0 25px 0
+    +above($breakpoints.md)
+      padding 50px 0 25px 0
+    +above($breakpoints.xxl)
+      padding 69px 0 30px 0
+
+  &__sub-title
+    padding 0 0 15px 0
+    +above($breakpoints.sm)
+      padding 0 0 30px 0
+    +above($breakpoints.md)
+      padding 0 0 35px 0
+    +above($breakpoints.xxl)
+      padding 0 0 40px 0
+
+  &__bottom
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 20px
+    +above($breakpoints.sm)
+      flex-direction: row
+      align-items: flex-start
+    +above($breakpoints.md)
+      gap: 40px
+    +above($breakpoints.xxl)
+      gap: 79px
+
+  &__form
+    display: flex
+    flex-direction: column
+    align-items: center
+    gap: 8px
+    width 260px
+    +above($breakpoints.sm)
+      width 220px
+    +above($breakpoints.md)
+      gap: 12px
+    +above($breakpoints.xxl)
+      gap: 16px
+
+  &__img
+    width 260px
+    height: auto
+    margin 20px auto 0
+    +above($breakpoints.sm)
+      width 300px
+      margin 0
+      position: absolute
+      right: 0
+      bottom: 73px
+    +above($breakpoints.md)
+      width 400px
+      right: 0
+      bottom: 82px
+    +above($breakpoints.xxl)
+      width 480px
+      right: 0
+      bottom: 137px
+
+  &__img-tape-1
+    position: absolute
+    height: auto
+    bottom: 10px
+    left: 50%
+    width 768px
+    transform: translateX(-50%)
+    bottom: 0
+    +above($breakpoints.sm)
+      width 1024px
+      bottom: 35px
+    +above($breakpoints.md)
+      width 1400px
+      bottom: 40px
+    +above($breakpoints.xxl)
+      width 1920px
+      height: auto
+      bottom: 48px
+    +above($breakpoints.xxxxl)
+      width 100vw
+      height: 17vh
+      bottom: 82px
+    +above($breakpoints.xxxxxl)
+      width 100vw
+      height: 17vh
+      bottom: 90px
+    +above($breakpoints.xxxxxxl)
+      display: none
+    //   width 100vw
+    //   height: 17vh
+    //   bottom: 0
+    // +above($breakpoints.xxxxxxxl)
+    //   width 100vw
+    //   height: 10vh
+    //   bottom: 0
+
+  &__img-tape-2
+    position: absolute
+    height: auto
+    bottom: 0
+    left: 50%
+    transform: translateX(-50%)
+    width 768px
+    bottom: 0
+    +above($breakpoints.sm)
+      width 1024px
+      bottom: 35px
+    +above($breakpoints.md)
+      width 1400px
+      bottom: 40px
+    +above($breakpoints.xxl)
+      width 1920px
+      height: auto
+      bottom: 13px
+    +above($breakpoints.xxxxl)
+      width 100vw
+      height: 17vh
+      bottom: 82px
+    +above($breakpoints.xxxxxl)
+      width 100vw
+      height: 17vh
+      bottom: 90px
+    +above($breakpoints.xxxxxxl)
+      display: none
+    //   width 100vw
+    //   height: 17vh
+    //   bottom: 0
+    // +above($breakpoints.xxxxxxxl)
+    //   width 100vw
+    //   height: 10vh
+    //   bottom: 0
